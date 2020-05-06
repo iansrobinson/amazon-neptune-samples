@@ -301,19 +301,19 @@
           "NeptuneClusterSubnet1": {
             "Fn::GetAtt": [
               "NeptuneCluster",
-              "Outputs.PublicSubnet1"
+              "Outputs.PrivateSubnet1"
             ]
           },
           "NeptuneClusterSubnet2": {
             "Fn::GetAtt": [
               "NeptuneCluster",
-              "Outputs.PublicSubnet2"
+              "Outputs.PrivateSubnet2"
             ]
           },
           "NeptuneClusterSubnet3": {
             "Fn::GetAtt": [
               "NeptuneCluster",
-              "Outputs.PublicSubnet3"
+              "Outputs.PrivateSubnet3"
             ]
           },
           "NeptuneClientSecurityGroup": "",
