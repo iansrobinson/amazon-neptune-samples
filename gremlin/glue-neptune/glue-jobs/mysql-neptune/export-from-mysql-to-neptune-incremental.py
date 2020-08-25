@@ -95,6 +95,7 @@ selectfields2 = SelectFields.apply(frame = applymapping2, paths = ["~id", "lineN
 
 selectfields2.toDF().foreachPartition(gremlin_client.add_vertices('OrderDetail', batch_size=100))
 
+
 print("Creating ORDER_DETAIL edges...")
 
 applymapping3 = RenameField.apply(applymapping2, "~id", "~to")
